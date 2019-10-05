@@ -80,7 +80,7 @@ if __name__ == '__main__':
     idx = 1
     Q_ = list(Q)
     R_ = list(R)
-    for i in range(1000):
+    for i in range(100):
         print(idx)
         idx+=1
         Q_ = np.random.permutation(Q_)
@@ -110,7 +110,7 @@ if __name__ == '__main__':
     # Plotting
     
     n, bins, patches = plt.hist(x= scores_random_sequences, bins='auto', 
-                                color='#0504aa', alpha=0.7, rwidth=0.85)
+                                color='#52D017', alpha=0.7, rwidth=0.85) # Yellow Green 
     
     plt.axvline(x = score, linewidth = 3, color = 'r')
     
