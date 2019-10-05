@@ -3,7 +3,7 @@ import argparse
 import random
 import matplotlib.pyplot as plt
 from standard_needleman import needleman_wunsch
-from standard_needleman import compute
+from utils import compute
 from anchored_needleman import anchored_needleman_wunsch
 import time
 import numpy as np
@@ -66,7 +66,7 @@ if __name__ == '__main__':
         [score, query_with_gaps, ref_with_gaps] = anchored_needleman_wunsch(Q = Q, R = R,
             matches = matches_, gap_penalty = gap_penalty, match_score = match_score, mismatch_score = mismatch_score)
 
-    print(compute(query_with_gaps,ref_with_gaps))
+    # print(compute(query_with_gaps,ref_with_gaps))
     print('Score: ' + str(score) + '\n')
     print('Aligned Query Sequence: ' + '\n' + query_with_gaps + '\n' )
     print('Aligned Reference Sequence: ' + '\n' + ref_with_gaps + '\n')
@@ -83,7 +83,6 @@ if __name__ == '__main__':
     for i in range(1000):
         print(idx)
         idx+=1
-        
         Q_ = np.random.permutation(Q_)
         R_ = np.random.permutation(R_)
         # random.shuffle(Q_)
