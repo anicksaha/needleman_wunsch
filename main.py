@@ -80,7 +80,7 @@ if __name__ == '__main__':
     idx = 1
     Q_ = list(Q)
     R_ = list(R)
-    for i in range(100):
+    for i in range(10000):
         print(idx)
         idx+=1
         Q_ = np.random.permutation(Q_)
