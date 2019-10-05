@@ -1,4 +1,4 @@
-# needleman_wunsch
+# [needleman_wunsch](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
 
 ##### HOX:
 - `python3 main.py -q _data/Human_HOX.fa -r _data/Fly_HOX.fa`
