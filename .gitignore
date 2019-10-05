@@ -5,3 +5,6 @@
 .DS_Store?
 .Rhistory
 .Rhistory?
+
+# __pycache__
+.pyc
